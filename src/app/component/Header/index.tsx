@@ -1,15 +1,20 @@
 'use client';
 import Link from 'next/link';
 import { signOut, useSession } from 'next-auth/react';
+import Image from 'next/image';
+import Logo from '../../../../public/img/logo.svg';
+import styles from './style.module.css';
 
 export default function Header() {
   const { data: session, status } = useSession();
-  // console.log(session);
   const handleLogout = () => signOut();
   return (
-    <header>
-      <div>로고</div>
-      <div>
+    <header className={styles.header}>
+      <Link href="/">
+        <Image src={Logo} alt="uxis design archive" />
+      </Link>
+
+      <div className={styles.control}>
         {session ? (
           <>
             {session.user?.name}님 <button onClick={handleLogout}>로그아웃</button>

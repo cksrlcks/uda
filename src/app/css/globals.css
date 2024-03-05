@@ -1,2 +1,27 @@
 body {
+  background: #f4f7f8;
+  font-display: swap;
+  font-family:
+    'Pretendard Variable',
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    'Helvetica Neue',
+    'Segoe UI',
+    'Apple SD Gothic Neo',
+    'Noto Sans KR',
+    'Malgun Gothic',
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.global-inner {
+  max-width: 1432px;
+  margin: 0 auto;
+  padding: 100px 16px;
 }

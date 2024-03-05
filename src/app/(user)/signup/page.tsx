@@ -1,4 +1,6 @@
 'use client';
+import AuthForm from '@/app/component/AuthForm';
+import Input from '@/app/component/Input';
 import React, { FormEvent, useRef, useState } from 'react';
 
 export default function SignupPage() {
@@ -35,35 +37,32 @@ export default function SignupPage() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input
+      <AuthForm onSubmit={handleSubmit} title="회원가입">
+        <Input
           type="text"
           name="email"
           value={form.email}
           placeholder="이메일"
           onChange={(e) => setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))}
         />
-        <br />
-        <input
+        <Input
           type="text"
           name="name"
           value={form.name}
           placeholder="이름"
           onChange={(e) => setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))}
         />
-        <br />
-        <input
+        <Input
           type="password"
           name="password"
           value={form.password}
           placeholder="패스워드"
           onChange={(e) => setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))}
         />
-        <br />
-        <input type="password" ref={passwordCheckRef} placeholder="패스워드확인" />
+        <Input type="password" ref={passwordCheckRef} placeholder="패스워드확인" />
         <br />
         <button type="submit">회원가입</button>
-      </form>
+      </AuthForm>
     </div>
   );
 }
