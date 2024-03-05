@@ -1,0 +1,42 @@
+.frame {
+  display: flex;
+  gap: 60px;
+}
+
+.frameLeft {
+  flex: 1;
+}
+
+.frameRight {
+  flex: 0 1 400px;
+}
+.section {
+  margin-bottom: 40px;
+}
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1.2em;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.input input {
+  width: 100%;
+  height: 100%;
+  padding: 0 1em;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.control {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+}

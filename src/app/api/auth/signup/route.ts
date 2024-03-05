@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createUser } from '@/app/service/auth';
+import { createUser } from '@/service/auth';
 
 export async function POST(request: NextRequest) {
   const { name, email, password } = await request.json();

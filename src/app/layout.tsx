@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import './css/globals.css';
-import './css/reset.css';
-import AuthContext from './context/AuthContext';
-import Header from './component/Header';
+import '@/css/globals.css';
+import '@/css/reset.css';
+import AuthContext from '@/context/AuthContext';
+import Header from '@/components/Header';
 
 export const metadata: Metadata = {
   title: 'UXIS Design Archive',

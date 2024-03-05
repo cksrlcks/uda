@@ -2,8 +2,8 @@
 import React, { FormEvent, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { signIn } from 'next-auth/react';
-import Input from '@/app/component/Input';
-import AuthForm from '@/app/component/AuthForm';
+import Input from '@/components/Input';
+import AuthForm from '@/components/AuthForm';
 
 export default function LoginPage() {
   const router = useRouter();

@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { signOut, useSession } from 'next-auth/react';
 import Image from 'next/image';
-import Logo from '../../../../public/img/logo.svg';
+import Logo from '../../../public/img/logo.svg';
 import styles from './style.module.css';
 
 export default function Header() {
@@ -17,7 +17,10 @@ export default function Header() {
       <div className={styles.control}>
         {session ? (
           <>
-            {session.user?.name}님 <button onClick={handleLogout}>로그아웃</button>
+            <div>
+              {session.user?.name}님 <button onClick={handleLogout}>로그아웃</button>
+            </div>
+            <Link href="/write">작성</Link>
           </>
         ) : (
           <>

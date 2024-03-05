@@ -1,6 +1,6 @@
 'use client';
-import AuthForm from '@/app/component/AuthForm';
-import Input from '@/app/component/Input';
+import AuthForm from '@/components/AuthForm';
+import Input from '@/components/Input';
 import React, { FormEvent, useRef, useState } from 'react';
 
 export default function SignupPage() {
