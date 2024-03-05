@@ -13,7 +13,7 @@ export default function SignupPage() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const { email, name, password } = form;
-    const res = await fetch('/api/user/signup', {
+    const res = await fetch('/api/auth/signup', {
       method: 'POST',
       body: JSON.stringify({
         email,
