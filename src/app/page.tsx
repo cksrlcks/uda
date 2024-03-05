@@ -1,3 +1,10 @@
-export default function Home() {
-  return <>메인</>;
+import Header from './component/Header';
+
+export default async function Home() {
+  return (
+    <>
+      <Header />
+      <div>메인</div>
+    </>
+  );
 }

@@ -28,7 +28,7 @@ export async function findUser({ email, password }: { email: string; password: s
   }
 }
 
-export async function createuser({
+export async function createUser({
   name,
   email,
   password,

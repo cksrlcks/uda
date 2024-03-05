@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './css/globals.css';
 import './css/reset.css';
+import AuthContext from './context/AuthContext';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body>{children}</body>
+      <body>
+        <AuthContext>{children}</AuthContext>
+      </body>
     </html>
   );
 }
